@@ -71,15 +71,18 @@ backdrop-filter: blur(80px);
   z-index: 1;
   color: rgba(255,255,255,0.8);
   width: 300px;
-  
+
 }
 #username,#password{
   display: block;
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
+  
   border: none;
   border-radius: 5px;
+}
+#username{
+  margin-bottom: 20px;
 }
 #submit{
   width: 100%;
@@ -93,4 +96,13 @@ backdrop-filter: blur(80px);
 #submit:hover{
   background-color: rgba(0,0,0,0.5);
   transition: 0.1s ease-in;
+}
+#toggle{
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 64%;
+  transform: translateY(-50%);
 }
