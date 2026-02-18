@@ -111,17 +111,19 @@ backdrop-filter: blur(80px);
 #submit{
   width: 100%;
   padding: 10px;
-  border: none;
-  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 30px;
   background-color: rgba(0,0,0,0.1);
   color: white;
   cursor: pointer;
   margin-top: 20px;
   align-self: baseline;
+
 }
 #submit:hover{
   background-color: rgba(0,0,0,0.5);
   transition: 0.1s ease-in;
+  border-color: rgba(0,0,0,0.5);
 }
 /*logo*/
 .logo {
@@ -207,4 +209,15 @@ backdrop-filter: blur(80px);
     0 0 5px #00f7ff,
     0 0 10px #00f7ff,
     0 0 20px #00f7ff;
+}
+/*cursor*/
+.circle{
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

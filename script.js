@@ -6,3 +6,4 @@ text.innerHTML = text.innerText
     `<span style="transform: rotate(${i * 12}deg)">${char}</span>`
   )
   .join("");
+
