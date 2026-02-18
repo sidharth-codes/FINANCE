@@ -101,12 +101,20 @@ backdrop-filter: blur(80px);
   background-color: rgba(0,0,0,0.5);
   transition: 0.1s ease-in;
 }
-#toggle{
-  background-color: rgba(0,0,0,0.01);
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  right: 20px;
-  top: 60.1%;
-  transform: translateY(-50%);
+.logo{
+  position: relative;   /* REQUIRED for z-index to work */
+  z-index: 10;          /* higher than container */
+  text-align: left;
+  color: white;
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
 }
+.body{
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
